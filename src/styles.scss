@@ -1,1 +1,84 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$primary-gary100: #f1f1f1;
+$primary-gary500: #e3dfe7;
+$color-gray: #c1c1c1;
+$primary-gary700: #7f7d81;
+$primary-Black-800: #1e1e1e;
+$primary-purple300: #e7d5ff;
+$primary-purple400: #caa3ff;
+$primary-purple700: #9466ce;
+$purple: #6826bc;
+$primary-gradient: linear-gradient(150deg, #480e85, #9357dd, #6f00ff);
+
+.home {
+  background: $primary-gradient;
+  height: 100vh;
+}
+body {
+  background-color: #f1f1f1;
+}
+
+.font-w {
+  font-weight: 500;
+  color: $primary-gary100;
+  font-size: 64px;
+  line-height: 88px;
+}
+.P-Home {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #f1f1f1;
+}
+.btn-main {
+  background-color: #f1f1f1;
+  padding: 18px 38px 18px 38px;
+  border: none;
+  border-radius: 8px;
+  gap: 10;
+  color: $purple;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+.home-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 40px;
+}
+.w-65 {
+  width: 65%;
+}
+.home-card-learn {
+  background: $primary-gradient;
+  color: #fffdfd;
+  padding: 60px 0px 60px 0px;
+  P {
+    min-width: 20px;
+  }
+  margin-top: 10%;
+}
+.StepsContent {
+  margin-bottom: 60px;
+}
+.card .card-text {
+  width: 80%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $primary-gary700;
+}
+.card p:last-of-type {
+  color: $purple;
+  font-weight: 500;
+  line-height: 27px;
+  font-size: 18px;
+}
+.all-courses .btn-main {
+  background-color: $primary-purple700 !important;
+  color: #f1f1f1;
+  margin-top: 3%;
+}

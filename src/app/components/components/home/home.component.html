@@ -1,0 +1,166 @@
+<!-- !START OF HOME -->
+
+<div class="home">
+    <div class=" d-flex align-items-center justify-content-center h-100 text-center ">
+        <div class="w-50 
+        ">
+            <h1 class="font-w text-center ">
+                Learn Arabic & Quran Courses Online
+
+            </h1>
+            <p class=" P-Home py-5">Lorem Ipsum is simply dummy text of the printing and typesetting
+                <br>industry.
+                Lorem
+                Ipsum has
+                been the
+                industry's standard dummy<br> text ever since the 1500s,
+            </p>
+            <button class="btn-main">
+                Explore Courses
+            </button>
+        </div>
+    </div>
+</div>
+<!-- &WHY U CHOOSE US -->
+<div>
+    <div class="text-center d-flex justify-content-center my-4 flex-column h-100 align-items-center">
+        <h1>
+            Why Choose us
+        </h1>
+        <h3 class="my-3">
+            Learning Arabic online is easy and fun with Alif Aya.
+
+        </h3>
+    </div>
+    <div class="d-flex justify-content-center w-75 mx-auto">
+        <div class="row g-0 g-3">
+            <div class="col-md-4" *ngFor="let count of repeatCount">
+                <img [src]="data.imgs.front" alt="" class="w-100">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- *Categories -->
+<div>
+
+    <div class="text-center d-flex justify-content-center my-4 flex-column h-100 align-items-center">
+        <h1>
+            Categories
+        </h1>
+        <h3 class="my-3">
+            Learning Arabic online is easy and fun with Alif Aya.
+        </h3>
+    </div>
+    <div class="d-flex justify-content-center w-65 mx-auto">
+        <div class="row g-0 g-3">
+            <div class="col-md-4  text-center" *ngFor="let item of data.items">
+
+                <div class="home-card ">
+                    <h2>{{item.title}}</h2>
+                    <img [src]="item.img" alt="" class="w-100 py-2">
+
+                    <h3>{{item.courses}} courses</h3>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ^STEPS -->
+<div class="home-card-learn ">
+    <div class="text-center d-flex justify-content-center flex-column  align-items-center StepsContent">
+        <h1>
+            3 Steps to Start Learning!
+        </h1>
+        <h3 class="my-3">
+            Learning Arabic online is easy and fun with Alif Aya.
+
+        </h3>
+    </div>
+    <div class="d-flex justify-content-center w-75 mx-auto ">
+        <div class="row g-0 g-3">
+            <div class="col-md-4  text-center" *ngFor="let step of data.stepsOflearn">
+
+                <div class="">
+                    <img [src]="step.img" alt="" class="py-3" width="80px" height="100px">
+
+                    <h3 class="py-2">{{step.step}}</h3>
+
+                    <p class="w-75 mx-auto">{{step.detailes}} </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <button class="btn-main mx-auto d-block mt-5">
+        Start Learning
+    </button>
+
+</div>
+<!--  all-courses-->
+<div class="mt-5 all-courses">
+    <div class="text-center d-flex justify-content-center flex-column  align-items-center ">
+        <h1>
+            Choose your Course
+        </h1>
+        <h3 class="my-3">
+            Learning Arabic online is easy and fun with Alif Aya.
+
+        </h3>
+    </div>
+    <div class="d-flex justify-content-center  ">
+        <div class="row g-0 g-3">
+            <div class="col-md-4 " *ngFor="let count of repeatCount">
+
+                <div class="card" style="width: 23rem;">
+                    <img [src]="data.courses.img" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{data.courses.title}}</h5>
+                        <p class="card-text ">{{data.courses.info}}</p>
+                        <p class="d-flex justify-content-start gap-2"><img src="../../../../assets/star 1.png"
+                                alt=""><span class="text-black">4.6</span></p>
+                    </div>
+                    <p class="text-end pe-3 "> $20/Monthly</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <button class="btn-main mx-auto d-block ">
+        All Courses
+    </button>
+</div>
+<div class="home-card-learn ">
+
+
+
+
+
+    <div class="text-center d-flex justify-content-center flex-column  align-items-center StepsContent">
+        <h1>
+            Start learning Arabic with top <br> teachers.
+        </h1>
+        <h5 class="my-3">
+            We have teachers who specialize in teaching the foundations <br> of Arabic all the way to advanced topics.
+
+        </h5>
+    </div>
+    <div class="d-flex justify-content-center  mx-auto w-75">
+        <div class=" mx-auto text-center" *ngFor="let img of data.teachers.img; let i = index" width="25%">
+            <div>
+                <img [src]="img" alt="Teacher Image" class="py-3">
+                <h3>{{ data.teachers.name[i] }}</h3>
+                <p> Arabic Teacher</p>
+            </div>
+        </div>
+
+    </div>
+    <button class="btn-main mx-auto d-block mt-5">
+        All Teachers
+    </button>
+</div>
